@@ -13,19 +13,20 @@ class Greeter {
   }
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-  EmbarkJS.onReady(function() {
-   // Interact with contracts, storage, etc..
-  });
-
-  let greeter = new Greeter("world");
-  
-  let button = document.createElement('button');
-  button.textContent = "Say Hello";
-  button.onclick = function() {
-    alert(greeter.greet());
+EmbarkJS.onReady(function(error: string) {
+  if(error) {
+    console.error(error)
   }
-  
-  document.body.appendChild(button);
+  console.log("Embark is ready")
 });
+
+let greeter = new Greeter("world");
+
+let button = document.createElement('button');
+button.textContent = "Say Hello";
+button.onclick = function() {
+  alert(greeter.greet());
+}
+
+document.body.appendChild(button);
 
