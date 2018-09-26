@@ -147,6 +147,16 @@ const base = {
   }
 };
 
+// typescript mods
+// -----------------------------------------------------------------------------
+base.resolve.extensions = [
+  // webpack defaults
+  // see: https://webpack.js.org/configuration/resolve/#resolve-extensions
+  '.wasm', '.mjs', '.js', '.json',
+  // typescript extensions
+  '.ts', '.tsx'
+];
+
 // development config
 // -----------------------------------------------------------------------------
 
