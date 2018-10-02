@@ -1,7 +1,5 @@
+// @ts-ignore
 import EmbarkJS from 'Embark/EmbarkJS';
-//import your contracts
-//e.g if you have a contract named SimpleStorage:
-//import SimpleStorage from 'Embark/contracts/SimpleStorage';
 
 class Greeter {
   greeting: string;
@@ -12,6 +10,10 @@ class Greeter {
     return "Hello, " + this.greeting;
   }
 }
+// import your contracts
+// e.g if you have a contract named SimpleStorage:
+// @ts-ignore
+// import SimpleStorage from 'Embark/contracts/SimpleStorage';
 
 EmbarkJS.onReady(function(error: string) {
   if(error) {
