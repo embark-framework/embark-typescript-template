@@ -2,7 +2,7 @@
   "contracts": ["contracts/**"],
   "app": {
     "css/app.css": ["app/css/**"],
-    "js/app.js": ["app/js/index.ts"],
+    "js/app.js": ["app/ts/index.ts"],
     "images/": ["app/images/**"],
     "index.html": "app/index.html"
   },
