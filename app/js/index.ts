@@ -8,6 +8,11 @@ import EmbarkJS from 'Embark/EmbarkJS';
 
 import {Greeter} from './greet'
 
+// check with `npm run type-check` or `npm run type-check:watch`
+const badlyTyped: string = true;
+// type errors do not affect and are not reported in embark's build pipeline
+// can run type checker in one terminal while embark is running in another
+
 EmbarkJS.onReady(function(error: string) {
   if(error) {
     console.error(error)
