@@ -7,7 +7,12 @@ import EmbarkJS from 'Embark/EmbarkJS';
 // import SimpleStorage from 'Embark/contracts/SimpleStorage';
 
 import {Greeter} from './greet';
-import './babel-demos';
+
+// remove the .disabled extension from app/ts/babel-demos.ts and uncomment the
+// line below to enable some demos of webpack/babel features included with
+// Embark, but first see the package installation instructions in that file
+
+// import './babel-demos';
 
 // check with `npm run type-check` or `npm run type-check:watch`
 const badlyTyped: string = true;
