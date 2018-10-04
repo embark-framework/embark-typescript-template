@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "scripts": {
+    "tsc": "tsc",
     "test": "embark test",
     "type-check": "tsc --noEmit",
     "type-check:watch": "npm run type-check -- --watch"
